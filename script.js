@@ -1,3 +1,4 @@
+
 var data =$.ajax({
     url: "pokemons.json",
     type: "get",
@@ -13,7 +14,8 @@ function replaceWith(name, type) {
     $(".blackborder").replaceWith("<img src='http://img.pokemondb.net/artwork/" + name + ".jpg'>");
     $("img").addClass("blackborder");
     $("img").addClass("bigradius");
-    $(".type").html(name + type);
+    $(".pokename").html("Name : "+name );
+    $(".poketype").html( "Type : "+type);
 }
 function isValidPokemon(name) {
     $.getJSON("pokemons.json", function (data) {

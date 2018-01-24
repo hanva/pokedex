@@ -152,7 +152,7 @@ body{
     left: 0.7vw;
 }
 .screen{
-    margin-top: 14%;
+    margin-top: 2vw;
     margin-left: 18%;
     width: 20vw;
     height: 9vw;
@@ -234,6 +234,16 @@ div.whiteButton {
     background: -o-radial-gradient(#ebffff, #bacfd8);
     border:0.15vw solid black;
 }
+div.blackButton {
+    height: 3vw;
+    width: 9vw;
+    margin-right:2vw;
+    background: radial-gradient(#000000, #2f3436);
+    background: -webkit-radial-gradient(#000000, #2f3436);
+    background: -moz-radial-gradient(#000000, #2f3436);
+    background: -o-radial-gradient(#000000, #2f3436);
+    border:0.15vw solid black;
+}
 .button {
     position: relative;
 }
@@ -243,4 +253,15 @@ div.whiteButton {
 }
 .topo{
     margin-top:2vw;
+}
+.yellowcercle{
+    width: 2vw;
+    margin-left:10vw;
+    height: 2vw;
+    border: 0.2vw solid black;
+    border-radius:10000px;
+    background: radial-gradient(#ebfb05, #bbe329);
+    background: -webkit-radial-gradient(#ebfb05, #bbe329);
+    background: -moz-radial-gradient(#ebfb05, #bbe329);
+    background: -o-radial-gradient(#ebfb05, #bbe329);
 }
