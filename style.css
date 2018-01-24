@@ -18,32 +18,35 @@ body{
 }
 .backrightrectangle{
     box-shadow: -0 0.35vw  rgb(92, 9, 9);
-    height: 34.6vw;
+    height: 31.1vw;
     width:30vw;
 }
 .red{
     background-color:rgb(167, 24, 24);
 }
 .margintop{
-    margin-top: 18vh;
+    margin-top: 8.9vw;
+}
+.margintopright{
+    margin-top: 12.4vw;
 }
 .flex{
     display: flex;
     flex-direction: row;
 }
 .bigradius{
-    border-radius: 2vw;
+    border-radius: 1vw;
 }
 .bigradiusright{
-    border-radius: 0vw 2vw 2vw 0vw;
+    border-radius: 0vw 1vw 1vw 0vw;
 }
 .blackborder{
     background-color: white;
-    margin-top: 1.6vw;
+    margin-top: 2vw;
     border:  0.25vw solid black;
-    margin-left:1.3vw;
-    height: 12vw;
-    width:19vw;
+    margin-left:2.7vw;
+    height: 10.4vw;
+    width:14vw;
     position: absolute;
 }
 .middlerectangle{
@@ -75,18 +78,87 @@ body{
     background: -webkit-linear-gradient(left, #500202 0%, #6d0808 50%, #3a0101 100%);
 }
 .greyscreen{
-    margin-left:2vw;
-    width:22vw;
+    margin-left:4vw;
+    width:20vw;
     height: 18vw;
     position: absolute;
-    background-color: rgb(216, 213, 213);
+    background-color: #D2D6CB;
 }
 .greyscreen:after {
     content: "";
-    border-top: 3.5vw solid rgb(216, 213, 213);
+    border-top: 3.5vw solid #D2D6CB;
     border-left: 3.5vw  solid rgb(167, 24, 24);
     height: 0;
     position: absolute;
     bottom: 0;
     left: 0;
 }
+.cross {
+    position: relative;
+    top: 30vw;
+    left: 17vw;
+}
+.dimcross {
+    width: 2vw;
+    height: 2vw;
+    position: absolute;
+}
+.colorcross{
+    background-color: #222;
+}
+.topcross{
+    bottom: 0vw;
+    left: 2vw;
+}
+.botcross{
+    bottom: -4vw;
+    left: 2vw;
+}
+.rightcross{
+    left: 4vw;
+}
+.centercross{
+    left: 2vw;
+}
+.left {
+    border-top: 0.65vw solid transparent;
+    border-right: 0.65vw solid #111;
+    border-bottom: 0.65vw solid transparent;
+    position: absolute;
+    top: 0.4vw;
+    left: 0.5vw;
+}
+.top {
+    border-left: 0.65vw solid transparent;
+    border-bottom:  0.65vw solid #111;
+    border-right:  0.65vw solid transparent;
+    position: absolute;
+    top: 0.7vw;
+    left: 0.4vw;
+}
+.bot {
+    border-left: 0.65vw solid transparent;
+    border-top:  0.65vw solid #111;
+    border-right:  0.65vw solid transparent;
+    position: absolute;
+    top: 0.7vw;
+    left: 0.4vw;
+}
+.right {
+    border-bottom: 0.65vw solid transparent;
+    border-left:  0.65vw solid #111;
+    border-top:  0.65vw solid transparent;
+    position: absolute;
+    top: 0.4vw;
+    left: 0.7vw;
+}
+.screen{
+    margin-top: 14%;
+    margin-left: 18%;
+    width: 20vw;
+    height: 15vw;
+    background-color: #A6AD97;
+    box-shadow: inset 0.3em 0.3em 1.5em black;
+    border: 0.2vw solid black;
+}
+
