@@ -1,4 +1,3 @@
-
 var data =$.ajax({
     url: "pokemons.json",
     type: "get",
@@ -9,49 +8,45 @@ var data =$.ajax({
         return data
     }
 })
-
+function Premiere(chaine){
+    return chaine.substr(0,1).toUpperCase()+	chaine.substr(1,chaine.length).toLowerCase()
+}
 function replaceWith(name, type) {
-    $(".blackborder").replaceWith("<img src='http://img.pokemondb.net/artwork/" + name + ".jpg'>");
+    $(".blackborder").replaceWith("<img src='http://www.pokestadium.com/sprites/xy/" + name + ".gif'>");
     $("img").addClass("blackborder");
     $("img").addClass("bigradius");
-    $(".pokename").html("Name : "+name );
+    $(".pokename").html("Name : "+name);
     $(".poketype").html( "Type : "+type);
 }
-function isValidPokemon(name) {
-    $.getJSON("pokemons.json", function (data) {
-        console.log(data)
-        for (var i in data) {
-            if (data[i].name == name) {
-                console.log(data[i].name)     
-                return data[i].name;
-            } 
-        }
-        return false;
-    })
+function replaceErrors(errornumb,errorname) {
+    $(".errornumb").html(errornumb)
+    $(".errorname").html(errorname)
 }
-var noice = isValidPokemon("Pikachu");
-console.log(noice);
-
-
-
 $("form[name=form]").submit(function () {
     var pokemon = $(this).find(':text[name="pokemon"]').val();
     if (pokemon < 1 || pokemon > 151) {
-        $(".error").html(pokemon + " is not a valid number");
+        replaceErrors(pokemon + ' is not a valid number',"")
+        return false
     }
+    pokemon = pokemon.substr(0, 1).toUpperCase() + pokemon.substr(1, pokemon.length);
     $.getJSON("pokemons.json", function (data) {
         for (var i in data) {
             if (data[i].name === pokemon) {
                 lowercasepokemon = pokemon.toLowerCase();
                 type = data[i].type;
                 replaceWith(lowercasepokemon, type)
-                $(".error").html("");
+                replaceErrors("","")
+                return false
             } else if (i === pokemon) {
                 namel = data[i].name;
                 type = data[i].type;
                 lowercasepokemon = namel.toLowerCase();
                 replaceWith(lowercasepokemon, type)
-                $(".error").html("");
+                replaceErrors("","")
+                return false
+            }
+            else{
+                replaceErrors("",pokemon+" is not a valid name")
             }
         };
     })
