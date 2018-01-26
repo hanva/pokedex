@@ -1,8 +1,11 @@
+
 @font-face {
 	font-family: "pokefont";
 	src: url('ingame.ttf');
 }
 p{
+    margin-left:1vw;
+    font-size:1vw;
     font-family: 'pokefont'
 }
 body{
@@ -25,8 +28,9 @@ body{
 }
 .backrightrectangle{
     box-shadow: -0 0.35vw  rgb(92, 9, 9);
-    height: 31.1vw;
+    height: 31.15vw;
     width:30vw;
+
 }
 .red{
     background-color:rgb(167, 24, 24);
@@ -61,7 +65,7 @@ body{
     border: 0.1vw solid #3a0101;
     box-shadow: -0 0.35vw  rgb(92, 9, 9);
     width:5vw;
-    height: 34.4vw;
+    height: 34.45vw;
     position: absolute;
     margin-left:47vw;
     background: -webkit-linear-gradient(left, #7e0202 0%, #9c0b0b 50%, #660000 100%);
@@ -88,17 +92,17 @@ body{
     background: -webkit-linear-gradient(left, #500202 0%, #6d0808 50%, #3a0101 100%);
 }
 .greyscreen{
-      border: 0.2vw solid black;
-    margin-left:4vw;
+    margin-top:6vw;
+    border: 0.2vw solid black;
+    margin-left:3vw;
     width:20vw;
     height: 18vw;
     position: absolute;
     background-color: #D2D6CB;
 }
 .cross {
-    
     position: relative;
-    top: 30vw;
+    top: 29vw;
     left: 17vw;
 }
 .dimcross {
@@ -107,23 +111,36 @@ body{
     position: absolute;
 }
 .colorcross{
-
     background-color: #222;
 }
+.leftcross{
+    border-top:  0.15vw solid black;
+    border-left:  0.15vw solid black;
+    border-bottom: 0.15vw solid black;
+}
 .topcross{
-    
     bottom: 0vw;
     left: 2vw;
+    border-top:  0.15vw solid black;
+    border-left:  0.15vw solid black;
+    border-right: 0.15vw solid black;
 }
 .botcross{
-    bottom: -4vw;
+    bottom:-4.15vw;
     left: 2vw;
+    border-bottom:  0.15vw solid black;
+    border-left:  0.15vw solid black;
+    border-right: 0.15vw solid black;
 }
 .rightcross{
-    left: 4vw;
+    left: 4.15vw;
+    border-bottom:  0.15vw solid black;
+    border-top:  0.15vw solid black;
+    border-right: 0.15vw solid black;
 }
 .centercross{
-    left: 2vw;
+    left: 2.15vw;
+    z-index: 1;
 }
 .left {
     border-top: 0.65vw solid transparent;
@@ -167,7 +184,18 @@ body{
     box-shadow: inset 0.3em 0.3em 1.5em black;
     border: 0.2vw solid black;
 }
-div.sp {
+.greenscreen{
+    margin-top: 28.6vw;
+    margin-left: 3vw;
+    position: absolute;
+    width: 12vw;
+    height: 4vw;
+    background-color: rgb(25, 179, 64);
+    box-shadow: inset  0 0 0.12vw black;
+    border: 0.19vw solid black;
+    border-radius: 0.5vw;
+}
+div.sp{
     height: 0.16vw;
     margin-bottom:  0.33828125vw;
     background-color: #494949;
@@ -205,23 +233,33 @@ div.sp {
     margin-left:10vw;
 }
 .buttonGlass {
-    width: 60px;
-    height: 60px;
-    margin-right: 15px;
-    border: 5px solid #fff;
+    width: 4vw;
+    height: 4vw;
+    border: 0.3vw solid #fff;
     position: absolute;
     box-shadow: 0 0 10px #490000;
     -webkit-box-shadow: 0 0 10px #490000;
     -moz-box-shadow: 0 0 10px #490000;
     -o-box-shadow: 0 0 10px #490000;
-    background: radial-gradient(#05fbfb, #29abe3);
-    background: -webkit-radial-gradient(#05fbfb, #29abe3);
-    background: -moz-radial-gradient(#05fbfb, #29abe3);
-    background: -o-radial-gradient(#05fbfb, #29abe3);
-    border-radius: 35px;
+    background: radial-gradient(#0567fb, #297ae3);
+    background: -webkit-radial-gradient(#0567fb, #297ae3);
+    background: -moz-radial-gradient(#0567fb, #297ae3);
+    background: -o-radial-gradient(#0567fb, #297ae3);
+    border-radius: 3vw;
     -webkit-border-radius: 35px;
     -moz-border-radius: 35px;
     -o-border-radius: 35px;
+}
+.reflect {
+    width: 30px;
+    height: 18px;
+    margin: 3px 0 0 15px;
+    background: #fff;
+    opacity: 0.6;
+    border-radius: 15px 9px;
+    -webkit-border-radius: 15px 9px;
+    -moz-border-radius: 15px 9px;
+    -o-border-radius: 15px 9px;
 }
 div.blueButton {
     height: 3vw;
@@ -272,3 +310,153 @@ div.blackButton {
     background: -moz-radial-gradient(#ebfb05, #bbe329);
     background: -o-radial-gradient(#ebfb05, #bbe329);
 }
+.poketopp{
+    position: absolute;
+    width: 17vw;
+    height: 4.5vw;
+    background-color:#8B0000;
+    margin-left: 34.9vw;
+    margin-top: 4vw;
+    border-radius:0.2vw;
+    border-top:  0.35vw solid rgb(92, 9, 9);
+    border-radius:  0.35vw ;
+    border-right:  0.35vw solid rgb(92, 9, 9);
+    border-top-right-radius:  1vw ;
+    border-bottom:  0.35vw solid rgb(92, 9, 9);
+    
+}
+.poketoppright{
+    position: absolute;
+    width: 12vw;
+    height: 3.8vw;
+    background-color:#A71818;
+    margin-left: 52.20vw;
+    margin-top: 8.9vw;
+    
+}
+.poketoppp{
+    position: absolute;
+    width: 15vw;
+    border-radius:0.2vw;
+    margin-top: 4vw;
+    height: 8.4vw;
+    background-color: #8B0000;
+    margin-left: 20vw;
+    border-top-left-radius:  1vw ;
+    border-top:  0.35vw solid rgb(92, 9, 9);
+    border-left:  0.35vw solid rgb(92, 9, 9);
+    border-bottom:  0.35vw solid rgb(92, 9, 9);
+}
+.redbutton{
+    width: 1.5vw;
+    margin-left:9vw;
+    margin-top: 0.3vw;
+    height: 1.5vw;
+    border: 0.2vw solid black;
+    border-radius:10000px;
+    background: radial-gradient(#fb0505, #e32929);
+    background: -webkit-radial-gradient(#fb0505, #e32929);
+    background: -moz-radial-gradient(#fb0505, #e32929);
+    background: -o-radial-gradient(#fb0505, #e32929);
+}
+.yellowbutton{
+    width: 1.5vw;
+    margin-left:12.2vw;
+    height: 1.5vw;
+    border: 0.2vw solid black;
+    border-radius:10000px;
+    position: absolute;
+    top:0.3vw;
+    background: radial-gradient(#cefb05, #c1e329);
+    background: -webkit-radial-gradient(#cefb05, #c1e329);
+    background: -moz-radial-gradient(#cefb05, #c1e329);
+    background: -o-radial-gradient(#cefb05, #c1e329);
+}
+.greenbutton{
+    width: 1.5vw;
+    height: 1.5vw;
+    border: 0.2vw solid black;
+    border-radius:10000px;
+    position: absolute;
+    margin-left:0.8vw;
+    top:0.3vw;
+    background: radial-gradient(#0dfb05, #29e361);
+    background: -webkit-radial-gradient(#0dfb05, #29e361);
+    background: -moz-radial-gradient(#0dfb05, #29e361);
+    background: -o-radial-gradient(#0dfb05, #29e361);
+    z-index: 1;
+}
+.triangle {
+width: 0;
+height: 0;
+border-style: solid;
+border-width: 5.1vw 5vw 0 0;
+position: absolute;
+margin-left :34.92vw;
+margin-top:6.95vw;
+border-color: #8B0000 transparent transparent transparent;
+transform: scaleY(1.27);
+}
+.triangleright{
+    width: 0;
+height: 0;
+border-style: solid;
+border-width: 5.1vw 5vw 0 0;
+position: absolute;
+margin-left :64.25vw;
+margin-top:8.87vw;
+border-color: #A71818 transparent transparent transparent;
+transform: scaleY(1.27);
+transform: rotate(270deg);
+}
+.barre{
+    width: 0px;
+    height: 4.7vw;
+margin-left :36.3vw;
+margin-top:8.4vw;
+position: absolute;
+border: 0.22vw solid #5C0909  ;
+border-radius:0.2vw;
+transform: rotate(38deg);
+}
+.bars{
+    margin-top:26vw;
+    margin-left:3.2vw;
+    width: 20vw;
+    height: 3vw;
+    position: absolute;
+}
+.bar{
+    width: 5vw;
+    height: 0.5vw;
+    background-color:rgb(196, 16, 16);
+    border: 0.2vw solid black;
+    margin-right:1.5vw;
+}
+.blue{
+    background-color:rgb(27, 119, 177);
+}
+
+@media (max-width: 780px) {
+    .triangleright{
+            display:none;
+        }
+    .backrightrectangle{
+        display: none
+        }
+    .poketoppright{
+         display: none;}
+    .greyscreen{
+         display: none;}
+    .bar{
+        display: none;}
+        .greenscreen{
+            display: none
+        }
+        .cross{
+            display: none
+        }
+        .backleftrectangle{
+            background-color:#8B0606;
+        }
+     }
