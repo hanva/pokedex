@@ -63,20 +63,22 @@ body{
 }
 .middlerectangle{
     border: 0.1vw solid #3a0101;
-    box-shadow: -0 0.35vw  rgb(92, 9, 9);
+    border-bottom:  0.43vw solid  rgb(92, 9, 9);
     width:5vw;
     height: 34.45vw;
     position: absolute;
     margin-left:47vw;
     background: -webkit-linear-gradient(left, #7e0202 0%, #9c0b0b 50%, #660000 100%);
+    box-shadow: 0.02vw -0.1vw  0.25vw 0.02vw #000000;
+    z-index: 1;
 }
 .collum{
     flex-direction: column;
 }
 .firstrayon{
     margin-top: 1vw;
-    border-top: 3px solid rgb(92, 9, 9);
-    border-bottom: 3px solid rgb(92, 9, 9);
+    border-top: 0.3vw solid rgb(92, 9, 9);
+    border-bottom:  0.3vw solid rgb(92, 9, 9);
     width:5vw;
     height: 4vw;
     position: absolute;
@@ -84,8 +86,8 @@ body{
 }
 .secondrayon{
     margin-top: 29.4vw;
-    border-top: 3px solid rgb(92, 9, 9);
-    border-bottom: 3px solid rgb(92, 9, 9);
+    border-top: 0.3vw solid rgb(92, 9, 9);
+    border-bottom: 0.3vw solid rgb(92, 9, 9);
     width:5vw;
     height: 4vw;
     position: absolute;
@@ -463,7 +465,7 @@ box-shadow: 0.35vw 0.05vw 0.55vw  #000000;
 .lol{
     display: none;
 }
-@media (max-width: 769px) {
+@media (max-width: 769px)  {
     .triangleright{
             display:none;
         }
