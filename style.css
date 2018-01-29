@@ -83,7 +83,7 @@ body{
     background: -webkit-linear-gradient(left, #500202 0%, #6d0808 50%, #3a0101 100%);
 }
 .secondrayon{
-    margin-top: 29vw;
+    margin-top: 29.4vw;
     border-top: 3px solid rgb(92, 9, 9);
     border-bottom: 3px solid rgb(92, 9, 9);
     width:5vw;
@@ -335,7 +335,7 @@ div.blackButton {
 }
 .poketoppright{
     position: absolute;
-    width: 12vw;
+    width: 8.5vw;
     height: 3.8vw;
     background-color:#A71818;
     margin-left: 52.20vw;
@@ -412,7 +412,7 @@ height: 0;
 border-style: solid;
 border-width: 5.1vw 5vw 0 0;
 position: absolute;
-margin-left :64.25vw;
+margin-left :60.75vw;
 margin-top:8.87vw;
 border-color: #A71818 transparent transparent transparent;
 transform: scaleY(1.27);
@@ -449,9 +449,36 @@ z-index: 1;
 .lol{
     display: none;
 }
-@media (max-width: 780px) {
+@media (max-width: 769px) {
     .triangleright{
             display:none;
+        }
+        input{
+            display: none
+        }
+        button{
+            display: none
+        }
+        .yellowtriangle{
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 3.2vw 3.2vw 0 0;
+            position: absolute;
+            margin-top:17.2vw;
+            border-color:  rgb(191, 194, 17)  transparent transparent transparent;
+            transform: rotate(135deg);
+            z-index: 1; 
+        }
+        .invbar{
+            margin-top:30vw;
+            margin-left:6vw;
+            position: absolute;
+            width: 14vw;
+            height: 0.5vw;
+            background-color:rgba(255, 255, 255, 0);
+            border: 0.12vw solid black;
+            border-radius: 1vw ;
         }
     .backrightrectangle{
         display: none
