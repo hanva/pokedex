@@ -4,8 +4,8 @@ var data = $.ajax({
     dataType: "json",
     data: "data",
     success: function (data) {
-        data = data
-        return data
+        data = data;
+        return data;
     }
 })
 function replaceWith(name, type) {
@@ -16,13 +16,13 @@ function replaceWith(name, type) {
     $(".poketype").html("Type : " + type);
 }
 function replaceErrors(errors) {
-    $(".errors").html(errors)
+    $(".errors").html(errors);
 }
 $("form[name=form]").submit(function () {
     var pokemon = $(this).find(':text[name="pokemon"]').val();
     if (pokemon < 1 || pokemon > 151) {
-        replaceErrors('Number pokemon ' + pokemon + ' not found.')
-        return false
+        replaceErrors('Number pokemon ' + pokemon + ' not found.');
+        return false;
     }
     pokemon = pokemon.substr(0, 1).toUpperCase() + pokemon.substr(1, pokemon.length);
     $.getJSON("pokemons.json", function (data) {
@@ -31,18 +31,18 @@ $("form[name=form]").submit(function () {
                 lowercasepokemon = pokemon.toLowerCase();
                 type = data[i].type;
                 replaceWith(lowercasepokemon, type)
-                replaceErrors("")
-                return false
+                replaceErrors("");
+                return false;
             } else if (i === pokemon) {
                 namel = data[i].name;
                 type = data[i].type;
                 lowercasepokemon = namel.toLowerCase();
-                replaceWith(lowercasepokemon, type)
-                replaceErrors("")
-                return false
+                replaceWith(lowercasepokemon, type);
+                replaceErrors("");
+                return false;
             }
             else {
-                replaceErrors(pokemon + " not found")
+                replaceErrors(pokemon + " not found");
             }
         };
     })
