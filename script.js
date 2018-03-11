@@ -4,12 +4,11 @@ var data = $.ajax({
     dataType: "json",
     data: "data",
     success: function (data) {
-        data = data;
         return data;
     }
 })
 function replaceWith(name, type) {
-    $(".blackborder").replaceWith("<img src='http://www.pokestadium.com/sprites/xy/" + name + ".gif'>");
+    $(".blackborder").replaceWith("<img src='http://www.pokestadium.com/sprites/xy/" + name + ".gif'>");  
     $("img").addClass("blackborder");
     $("img").addClass("bigradius");
     $(".pokename").html("Name : " + name);

@@ -1,150 +1,176 @@
-
 @font-face {
-	font-family: "pokefont";
-	src: url('ingame.ttf');
+    font-family: "pokefont";
+    src: url('ingame.ttf');
 }
-p{
-    margin-left:1vw;
-    font-size:1vw;
+
+p {
+    margin-left: 1vw;
+    font-size: 1vw;
     font-family: 'pokefont'
 }
-body{
+
+body {
     background-color: #79CAF9;
     width: 100%;
     height: 100;
 }
-.center{
+
+.center {
     text-align: center;
 }
-.radius{
+
+.radius {
     border-radius: 3px;
 }
-.backleftrectangle{
-    border:  0.35vw solid rgb(92, 9, 9);
+
+.backleftrectangle {
+    border: 0.35vw solid rgb(92, 9, 9);
     display: table;
     height: 34.4vw;
-    margin-left:20vw;
-    width:30vw;
+    margin-left: 20vw;
+    width: 30vw;
 }
-.backrightrectangle{
-    border-bottom:  0.35vw solid rgb(92, 9, 9);
+
+.backrightrectangle {
+    border-bottom: 0.35vw solid rgb(92, 9, 9);
     height: 31.15vw;
-    width:30vw;
-    box-shadow: 0.55vw -0.25vw  0.55vw -0.2vw #000000;
+    width: 30vw;
+    box-shadow: 0.55vw -0.25vw 0.55vw -0.2vw #000000;
 }
-.red{
-    background-color:rgb(167, 24, 24);
+
+.red {
+    background-color: rgb(167, 24, 24);
 }
-.margintop{
+
+.margintop {
     margin-top: 8.9vw;
 }
-.margintopright{
+
+.margintopright {
     margin-top: 12.4vw;
 }
-.flex{
+
+.flex {
     display: flex;
     flex-direction: row;
 }
-.bigradius{
+
+.bigradius {
     border-radius: 1vw;
 }
-.bigradiusright{
+
+.bigradiusright {
     border-radius: 0vw 1vw 1vw 0vw;
 }
-.blackborder{
+
+.blackborder {
     background-color: white;
     margin-top: 2vw;
-    border:  0.25vw solid black;
-    margin-left:2.7vw;
+    border: 0.25vw solid black;
+    margin-left: 2.7vw;
     height: 10.4vw;
-    width:14vw;
+    width: 14vw;
     position: absolute;
     box-shadow: inset 0.3em 0.3em 1.5em black;
 }
-.middlerectangle{
+
+.middlerectangle {
     border: 0.1vw solid #3a0101;
-    border-bottom:  0.43vw solid  rgb(92, 9, 9);
-    width:5vw;
+    border-bottom: 0.43vw solid rgb(92, 9, 9);
+    width: 5vw;
     height: 34.45vw;
     position: absolute;
-    margin-left:47vw;
+    margin-left: 47vw;
     background: -webkit-linear-gradient(left, #7e0202 0%, #9c0b0b 50%, #660000 100%);
-    box-shadow: 0.02vw -0.1vw  0.25vw 0.02vw #000000;
+    box-shadow: 0.02vw -0.1vw 0.25vw 0.02vw #000000;
     z-index: 1;
 }
-.collum{
+
+.collum {
     flex-direction: column;
 }
-.firstrayon{
+
+.firstrayon {
     margin-top: 1vw;
     border-top: 0.3vw solid rgb(92, 9, 9);
-    border-bottom:  0.3vw solid rgb(92, 9, 9);
-    width:5vw;
+    border-bottom: 0.3vw solid rgb(92, 9, 9);
+    width: 5vw;
     height: 4vw;
     position: absolute;
     background: -webkit-linear-gradient(left, #500202 0%, #6d0808 50%, #3a0101 100%);
 }
-.secondrayon{
+
+.secondrayon {
     margin-top: 29.4vw;
     border-top: 0.3vw solid rgb(92, 9, 9);
     border-bottom: 0.3vw solid rgb(92, 9, 9);
-    width:5vw;
+    width: 5vw;
     height: 4vw;
     position: absolute;
     background: -webkit-linear-gradient(left, #500202 0%, #6d0808 50%, #3a0101 100%);
 }
-.greyscreen{
-    margin-top:6vw;
+
+.greyscreen {
+    margin-top: 6vw;
     border: 0.2vw solid black;
-    margin-left:3vw;
-    width:20vw;
+    margin-left: 3vw;
+    width: 20vw;
     height: 18vw;
     position: absolute;
     background-color: #D2D6CB;
 }
+
 .cross {
     position: relative;
     top: 29vw;
     left: 17vw;
 }
+
 .dimcross {
     width: 2vw;
     height: 2vw;
     position: absolute;
 }
-.colorcross{
+
+.colorcross {
     background-color: #222;
 }
-.leftcross{
-    border-top:  0.15vw solid black;
-    border-left:  0.15vw solid black;
+
+.leftcross {
+    border-top: 0.15vw solid black;
+    border-left: 0.15vw solid black;
     border-bottom: 0.15vw solid black;
 }
-.topcross{
+
+.topcross {
     bottom: 0vw;
     left: 2vw;
-    border-top:  0.15vw solid black;
-    border-left:  0.15vw solid black;
+    border-top: 0.15vw solid black;
+    border-left: 0.15vw solid black;
     border-right: 0.15vw solid black;
 }
-.botcross{
-    bottom:-4.30vw;
+
+.botcross {
+    bottom: -4.30vw;
     left: 2vw;
-    border-bottom:  0.15vw solid black;
-    border-left:  0.15vw solid black;
+    border-bottom: 0.15vw solid black;
+    border-left: 0.15vw solid black;
     border-right: 0.15vw solid black;
 }
-.rightcross{
+
+.rightcross {
     left: 4.15vw;
-    border-bottom:  0.15vw solid black;
-    border-top:  0.15vw solid black;
+    border-bottom: 0.15vw solid black;
+    border-top: 0.15vw solid black;
     border-right: 0.15vw solid black;
 }
-.centercross{
+
+.centercross {
     left: 2.15vw;
     height: 2.15vw;
     z-index: 1;
 }
+
 .left {
     border-top: 0.65vw solid transparent;
     border-right: 0.65vw solid #111;
@@ -153,31 +179,35 @@ body{
     top: 0.4vw;
     left: 0.5vw;
 }
+
 .top {
     border-left: 0.65vw solid transparent;
-    border-bottom:  0.65vw solid #111;
-    border-right:  0.65vw solid transparent;
+    border-bottom: 0.65vw solid #111;
+    border-right: 0.65vw solid transparent;
     position: absolute;
     top: 0.7vw;
     left: 0.4vw;
 }
+
 .bot {
     border-left: 0.65vw solid transparent;
-    border-top:  0.65vw solid #111;
-    border-right:  0.65vw solid transparent;
+    border-top: 0.65vw solid #111;
+    border-right: 0.65vw solid transparent;
     position: absolute;
     top: 0.7vw;
     left: 0.4vw;
 }
+
 .right {
     border-bottom: 0.65vw solid transparent;
-    border-left:  0.65vw solid #111;
-    border-top:  0.65vw solid transparent;
+    border-left: 0.65vw solid #111;
+    border-top: 0.65vw solid transparent;
     position: absolute;
     top: 0.4vw;
     left: 0.7vw;
 }
-.screen{
+
+.screen {
     margin-top: 2vw;
     margin-left: 18%;
     width: 20vw;
@@ -186,58 +216,66 @@ body{
     box-shadow: inset 0.3em 0.3em 1.5em black;
     border: 0.2vw solid black;
 }
-.greenscreen{
+
+.greenscreen {
     margin-top: 28.6vw;
     margin-left: 3vw;
     position: absolute;
     width: 12vw;
     height: 4vw;
     background-color: rgb(25, 179, 64);
-    box-shadow: inset  0 0 0.12vw black;
+    box-shadow: inset 0 0 0.12vw black;
     border: 0.19vw solid black;
     border-radius: 0.5vw;
 }
-div.sp{
+
+div.sp {
     height: 0.16vw;
-    margin-bottom:  0.33828125vw;
+    margin-bottom: 0.33828125vw;
     background-color: #494949;
 }
+
 .speakers {
     position: relative;
-    margin-top:12.5vw;
-    margin-left:12vw;
+    margin-top: 12.5vw;
+    margin-left: 12vw;
     width: 4.5vw;
     height: 1.7vw;
 }
-.cerclebottom{
+
+.cerclebottom {
     border: 0.2vw solid black;
-    border-radius:10000px;
-    height:2vw;
+    border-radius: 10000px;
+    height: 2vw;
     width: 2vw;
     position: absolute;
-    margin-top:14vw;
-    margin-left:4vw;
+    margin-top: 14vw;
+    margin-left: 4vw;
 }
-.cercle{
-    margin-top:0.3vw;
-    margin-right:5vw;
-    padding-left:2.4vw;
+
+.cercle {
+    margin-top: 0.3vw;
+    margin-right: 5vw;
+    padding-left: 2.4vw;
 }
-.cercleleft{
+
+.cercleleft {
     border: 0.2vw solid black;
-    border-radius:10000px;
-    height:1vw;
+    border-radius: 10000px;
+    height: 1vw;
     width: 1vw;
     margin-left: 2vw;
 }
-.cercleright{
+
+.cercleright {
     border: 0.2vw solid black;
-    border-radius:10000px;
-    height:1vw;
+    border-radius: 10000px;
+    height: 1vw;
     width: 1vw;
 }
+
 .buttonGlass {
-    margin:0.7vw;
+    margin: 0.7vw;
     width: 6vw;
     height: 6vw;
     border: 0.3vw solid #fff;
@@ -248,6 +286,7 @@ div.sp{
     background: -o-radial-gradient(#0567fb, #297ae3);
     border-radius: 10000px;
 }
+
 .reflect {
     width: 2.4vw;
     height: 1.2vw;
@@ -255,21 +294,23 @@ div.sp{
     background: #fff;
     opacity: 0.6;
     border-radius: 1vw 0.6vw;
-    -webkit-border-radius: 1vw  0.6vw;
-    -moz-border-radius: 1vw  0.6vw;
-    -o-border-radius: 1vw  0.6vw;
+    -webkit-border-radius: 1vw 0.6vw;
+    -moz-border-radius: 1vw 0.6vw;
+    -o-border-radius: 1vw 0.6vw;
 }
+
 .smallreflect {
-    width:0.7vw;
+    width: 0.7vw;
     height: 0.3vw;
     margin: 0.1vw 0 0 0.25vw;
     background: #fff;
     opacity: 0.6;
     border-radius: 0.3vw 0.2vw;
-    -webkit-border-radius: 0.3vw   0.2vw;
-    -moz-border-radius:0.3vw   0.2vw;
+    -webkit-border-radius: 0.3vw 0.2vw;
+    -moz-border-radius: 0.3vw 0.2vw;
     -o-border-radius: 0.3vw 0.2;
 }
+
 div.blueButton {
     height: 3vw;
     width: 3.78vw;
@@ -277,8 +318,9 @@ div.blueButton {
     background: -webkit-radial-gradient(#05fbfb, #29abe3);
     background: -moz-radial-gradient(#05fbfb, #29abe3);
     background: -o-radial-gradient(#05fbfb, #29abe3);
-    border:0.15vw solid black;
+    border: 0.15vw solid black;
 }
+
 div.whiteButton {
     height: 3vw;
     width: 3.78vw;
@@ -286,79 +328,87 @@ div.whiteButton {
     background: -webkit-radial-gradient(#ebffff, #bacfd8);
     background: -moz-radial-gradient(#ebffff, #bacfd8);
     background: -o-radial-gradient(#ebffff, #bacfd8);
-    border:0.15vw solid black;
+    border: 0.15vw solid black;
 }
+
 div.blackButton {
     height: 3vw;
     width: 9vw;
-    margin-right:1.9vw;
+    margin-right: 1.9vw;
     background: radial-gradient(#000000, #2f3436);
     background: -webkit-radial-gradient(#000000, #2f3436);
     background: -moz-radial-gradient(#000000, #2f3436);
     background: -o-radial-gradient(#000000, #2f3436);
-    border:0.15vw solid black;
+    border: 0.15vw solid black;
 }
+
 .button {
     position: relative;
 }
-.row{ 
-    margin-left:5.4vw;
+
+.row {
+    margin-left: 5.4vw;
     flex-direction: row;
 }
-.topo{
-    margin-top:2vw;
+
+.topo {
+    margin-top: 2vw;
 }
-.yellowcercle{
+
+.yellowcercle {
     width: 2vw;
-    margin-left:10vw;
+    margin-left: 10vw;
     height: 2vw;
     border: 0.2vw solid black;
-    border-radius:10000px;
+    border-radius: 10000px;
     background: radial-gradient(#ebfb05, #bbe329);
     background: -webkit-radial-gradient(#ebfb05, #bbe329);
     background: -moz-radial-gradient(#ebfb05, #bbe329);
     background: -o-radial-gradient(#ebfb05, #bbe329);
-    
 }
-.poketopp{
+
+.poketopp {
     position: absolute;
     width: 16.9vw;
     height: 4.5vw;
-    background-color:#8B0000;
+    background-color: #8B0000;
     margin-left: 35vw;
     margin-top: 4vw;
-    border-radius:0.2vw;
-    border-top:  0.35vw solid rgb(92, 9, 9);
-    border-radius:  0.35vw ;
-    border-right:  0.35vw solid rgb(92, 9, 9);
-    border-top-right-radius:  1vw ;
-    border-bottom:  0.35vw solid rgb(92, 9, 9);
+    border-radius: 0.2vw;
+    border-top: 0.35vw solid rgb(92, 9, 9);
+    border-radius: 0.35vw;
+    border-right: 0.35vw solid rgb(92, 9, 9);
+    border-top-right-radius: 1vw;
+    border-bottom: 0.35vw solid rgb(92, 9, 9);
     z-index: 1;
-    box-shadow: 0.05vw 0.25vw 0.55vw  #000000;     
+    box-shadow: 0.05vw 0.25vw 0.55vw #000000;
 }
-.poketoppright{
+
+.poketoppright {
     position: absolute;
     width: 8.5vw;
     height: 3.8vw;
-    background-color:#A71818;
+    background-color: #A71818;
     margin-left: 52.20vw;
     margin-top: 8.9vw;
 }
-.poketoppp{
+
+.poketoppp {
     position: absolute;
     width: 15vw;
-    border-radius:0.2vw;
+    border-radius: 0.2vw;
     margin-top: 4vw;
     height: 8.4vw;
     background-color: #8B0000;
     margin-left: 20vw;
-    border-top-left-radius:  1vw ;
-    border-top:  0.35vw solid rgb(92, 9, 9);
-    border-left:  0.35vw solid rgb(92, 9, 9);
-    border-bottom:  0.35vw solid rgb(92, 9, 9);
-    box-shadow: 0.05vw 0.25vw 0.55vw  #000000;
+    border-top-left-radius: 1vw;
+    border-top: 0.35vw solid rgb(92, 9, 9);
+    border-left: 0.35vw solid rgb(92, 9, 9);
+    border-bottom: 0.35vw solid rgb(92, 9, 9);
+    box-shadow: 0.05vw 0.25vw 0.55vw #000000;
 }
-.corrector{
+
+.corrector {
     position: absolute;
     width: 0.8vw;
     height: 5vw;
@@ -367,160 +417,170 @@ div.blackButton {
     margin-top: 4.4vw;
     z-index: 1;
 }
-.redbutton{
+
+.redbutton {
     width: 1.5vw;
-    margin-left:9vw;
+    margin-left: 9vw;
     margin-top: 0.3vw;
     height: 1.5vw;
     border: 0.2vw solid black;
-    border-radius:10000px;
+    border-radius: 10000px;
     background: radial-gradient(#fb0505, #e32929);
     background: -webkit-radial-gradient(#fb0505, #e32929);
     background: -moz-radial-gradient(#fb0505, #e32929);
     background: -o-radial-gradient(#fb0505, #e32929);
 }
-.yellowbutton{
+
+.yellowbutton {
     width: 1.5vw;
-    margin-left:12.2vw;
+    margin-left: 12.2vw;
     height: 1.5vw;
     border: 0.2vw solid black;
-    border-radius:10000px;
+    border-radius: 10000px;
     position: absolute;
-    top:0.3vw;
+    top: 0.3vw;
     background: radial-gradient(#cefb05, #c1e329);
     background: -webkit-radial-gradient(#cefb05, #c1e329);
     background: -moz-radial-gradient(#cefb05, #c1e329);
     background: -o-radial-gradient(#cefb05, #c1e329);
 }
-.greenbutton{
+
+.greenbutton {
     width: 1.5vw;
     height: 1.5vw;
     border: 0.2vw solid black;
-    border-radius:10000px;
+    border-radius: 10000px;
     position: absolute;
-    margin-left:0.8vw;
-    top:0.3vw;
+    margin-left: 0.8vw;
+    top: 0.3vw;
     background: radial-gradient(#0dfb05, #29e361);
     background: -webkit-radial-gradient(#0dfb05, #29e361);
     background: -moz-radial-gradient(#0dfb05, #29e361);
     background: -o-radial-gradient(#0dfb05, #29e361);
     z-index: 1;
 }
+
 .triangle {
-width: 0;
-height: 0;
-border-style: solid;
-border-width: 3.2vw 3.35vw 0 0;
-position: absolute;
-margin-left :34.95vw;
-margin-top:9.17vw;
-border-color:  #8B0000  transparent transparent transparent;
-transform: scaleY(1.23);
-z-index: 1;
-
-    
-}
-.triangleright{
     width: 0;
-height: 0;
-border-style: solid;
-border-width: 5.1vw 5vw 0 0;
-position: absolute;
-margin-left :60.75vw;
-margin-top:8.87vw;
-border-color: #A71818 transparent transparent transparent;
-transform: scaleY(1.27);
-transform: rotate(270deg);
-
+    height: 0;
+    border-style: solid;
+    border-width: 3.2vw 3.35vw 0 0;
+    position: absolute;
+    margin-left: 34.95vw;
+    margin-top: 9.17vw;
+    border-color: #8B0000 transparent transparent transparent;
+    transform: scaleY(1.23);
+    z-index: 1;
 }
-.barre{
+
+.triangleright {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5.1vw 5vw 0 0;
+    position: absolute;
+    margin-left: 60.75vw;
+    margin-top: 8.87vw;
+    border-color: #A71818 transparent transparent transparent;
+    transform: scaleY(1.27);
+    transform: rotate(270deg);
+}
+
+.barre {
     width: 0px;
     height: 4.8vw;
-margin-left :36.48vw;
-margin-top:8.3vw;
-position: absolute;
-border: 0.22vw solid #5C0909  ;
-border-radius:0.2vw;
-transform: rotate(38deg);
-z-index: 1;
-box-shadow: 0.35vw 0.05vw 0.55vw  #000000;
+    margin-left: 36.48vw;
+    margin-top: 8.3vw;
+    position: absolute;
+    border: 0.22vw solid #5C0909;
+    border-radius: 0.2vw;
+    transform: rotate(38deg);
+    z-index: 1;
+    box-shadow: 0.35vw 0.05vw 0.55vw #000000;
 }
-.bars{
-    margin-top:26vw;
-    margin-left:3.2vw;
+
+.bars {
+    margin-top: 26vw;
+    margin-left: 3.2vw;
     width: 20vw;
     height: 3vw;
     position: absolute;
 }
-.bar{
+
+.bar {
     width: 5vw;
     height: 0.5vw;
-    background-color:rgb(196, 16, 16);
+    background-color: rgb(196, 16, 16);
     border: 0.2vw solid black;
-    margin-right:1.5vw;
+    margin-right: 1.5vw;
 }
-.blue{
-    background-color:rgb(27, 119, 177);
+
+.blue {
+    background-color: rgb(27, 119, 177);
 }
-.lol{
+
+.lol {
     display: none;
 }
-@media (max-width: 769px) and (orientation : portrait)  {
-    .triangleright{
-            display:none;
-        }
-        input{
-            display: none
-        }
-        button{
-            display: none
-        }
-        .yellowtriangle{
-            width: 0;
-            height: 0;
-            border-style: solid;
-            border-width: 3.2vw 3.2vw 0 0;
-            position: absolute;
-            margin-top:17.2vw;
-            border-color:  rgb(191, 194, 17)  transparent transparent transparent;
-            transform: rotate(135deg);
-            z-index: 1; 
-        }
-        .invbar{
-            margin-top:30vw;
-            margin-left:6vw;
-            position: absolute;
-            width: 14vw;
-            height: 0.5vw;
-            background-color:rgba(255, 255, 255, 0);
-            border: 0.12vw solid black;
-            border-radius: 1vw ;
-        }
-    .backrightrectangle{
+
+@media (max-width: 769px) and (orientation: portrait) {
+    .triangleright {
+        display: none;
+    }
+    input {
         display: none
-        }
-    .poketoppright{
-         display: none;}
-    .greyscreen{
-         display: none;}
-    .bar{
-        display: none;}
-        .greenscreen{
-            display: none
-        }
-        .cross{
-            display: none
-        }
-        .backleftrectangle{
-            background-color:#8B0606;
-        }
-        .lol{
-            position: absolute;
-            width:26.7vw;
-            height:30.4vw;
-            margin-top:4vw;
-            z-index: 1;
-            display: block;
-        }
-     }
-    
+    }
+    button {
+        display: none
+    }
+    .yellowtriangle {
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 3.2vw 3.2vw 0 0;
+        position: absolute;
+        margin-top: 17.2vw;
+        border-color: rgb(191, 194, 17) transparent transparent transparent;
+        transform: rotate(135deg);
+        z-index: 1;
+    }
+    .invbar {
+        margin-top: 30vw;
+        margin-left: 6vw;
+        position: absolute;
+        width: 14vw;
+        height: 0.5vw;
+        background-color: rgba(255, 255, 255, 0);
+        border: 0.12vw solid black;
+        border-radius: 1vw;
+    }
+    .backrightrectangle {
+        display: none
+    }
+    .poketoppright {
+        display: none;
+    }
+    .greyscreen {
+        display: none;
+    }
+    .bar {
+        display: none;
+    }
+    .greenscreen {
+        display: none
+    }
+    .cross {
+        display: none
+    }
+    .backleftrectangle {
+        background-color: #8B0606;
+    }
+    .lol {
+        position: absolute;
+        width: 26.7vw;
+        height: 30.4vw;
+        margin-top: 4vw;
+        z-index: 1;
+        display: block;
+    }
+}
